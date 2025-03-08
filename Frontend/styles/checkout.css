@@ -1,0 +1,101 @@
+/* Estilos específicos para a página de checkout */
+#checkout {
+  min-height: 90vh;
+  width: 80%;
+  margin: 10vh auto;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#checkout h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+.checkoutContainer {
+  display: flex;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.resumoCompra,
+.selecionarCliente {
+  flex: 1;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resumoCompra h2,
+.selecionarCliente h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.eventoInfo {
+  text-align: center;
+}
+
+.eventoNome {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.eventoData,
+.eventoLocal,
+.eventoPreco {
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para a lista de clientes */
+.listaClientes {
+  margin-bottom: 2rem;
+}
+
+.clienteItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.clienteItem input[type="radio"] {
+  margin-right: 1rem;
+}
+
+.clienteItem label {
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Botão de finalizar compra */
+.finalizarCompraBtn {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  background-color: #0c54e7;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.finalizarCompraBtn:hover {
+  background-color: #0941b5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .checkoutContainer {
+    flex-direction: column;
+  }
+}

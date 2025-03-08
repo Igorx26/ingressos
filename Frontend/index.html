@@ -1,0 +1,77 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/global.css" />
+    <title>Ingressos</title>
+  </head>
+  <body>
+    <header id="paginaIndex">
+      <nav class="navbar">
+        <img class="logoImg" src="./assets/imgs/logo.png" alt="Logomarca do Site" />
+
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#sobre">Sobre</a>
+        </div>
+
+        <div>
+          <a href="./pages/login.html" class="loginBtn">Login</a>
+          <a href="./pages/admin.html" class="adminBtn" target="_blank">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Início da seção Home -->
+      <section id="home">
+        <div class="homeContent">
+          <h1>Ingresso.com</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At laborum atque rem officiis modi dicta labore
+            nemo, perspiciatis maxime incidunt sapiente, odit voluptates, error reiciendis.
+          </p>
+        </div>
+        <div>
+          <img class="homeImg" src="assets/imgs/logo.png" alt="" />
+        </div>
+      </section>
+      <!-- Fim da seção Home -->
+
+      <!-- Início da seção Eventos -->
+      <section id="eventos">
+        <h1>Eventos Disponíveis</h1>
+        <div class="gridEventos">
+          <!-- Os eventos serão renderizados aqui -->
+        </div>
+      </section>
+      <!-- Fim da seção Eventos -->
+
+      <!-- Início da seção Sobre -->
+      <section id="sobre">
+        <h1>Sobre nossa empresa</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo atque iure obcaecati consequatur accusantium
+          facere animi rem totam et, inventore ipsam delectus omnis, provident esse commodi dignissimos quis dolore
+          laudantium! Dignissimos beatae, id dolores quas alias voluptas deleniti doloremque amet ullam quidem? Error
+          nostrum exercitationem harum enim perferendis ut rem!
+        </p>
+      </section>
+      <!-- Fim da seção Sobre -->
+    </main>
+
+    <!-- Início do footer -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Igor | All Rights Reserved.</p>
+      </div>
+    </footer>
+    <!-- Fim do footer -->
+
+    <script type="module" src="./scripts/fetch/fetchEventos.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/ingresso.css" />
+    <title>Ingresso</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img class="logoImg" src="../assets/imgs/logo.png" alt="Logomarca do Site" />
+        <div class="links">
+          <a href="../index.html#home">Home</a>
+          <a href="../index.html#eventos">Eventos</a>
+          <a href="../index.html#sobre">Sobre</a>
+        </div>
+        <div class="login">
+          <a href="./login.html" class="loginBtn">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="ingressoContainer">
+        <!-- Informações do ingresso -->
+        <section class="ingressoInfo">
+          <h1>Ingresso Gerado</h1>
+          <p>Evento: <span id="eventoNome"></span></p>
+          <p>Lote: <span id="loteNome"></span></p>
+          <p>Data: <span id="eventoData"></span></p>
+          <p>Local: <span id="eventoLocal"></span></p>
+          <p>Cliente: <span id="clienteNome"></span></p>
+        </section>
+
+        <!-- QR Code -->
+        <section class="qrCode">
+          <h1>QR Code Gerado</h1>
+          <img id="qrCodeImg" alt="QR Code do Ingresso" />
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2025 by Igor | All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="../scripts/renderIngresso.js" type="module"></script>
+  </body>
+</html>
