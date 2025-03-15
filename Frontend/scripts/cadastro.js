@@ -39,7 +39,7 @@ document.getElementById("cadastroForm").addEventListener("submit", async functio
     userName: userName,
     password: password,
     dataCriacao: new Date().toISOString().split("T")[0], // Data atual
-    idCliente: null, // Será preenchido pelo backend
+    idCliente: null,
   };
 
   try {
@@ -51,6 +51,8 @@ document.getElementById("cadastroForm").addEventListener("submit", async functio
       },
       body: JSON.stringify(cliente),
     });
+
+    console.log("responseCliente", responseCliente);
 
     if (!responseCliente.ok) {
       throw new Error("Erro ao cadastrar cliente.");

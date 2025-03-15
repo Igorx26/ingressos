@@ -149,11 +149,11 @@
 
     <script type="module">
       // Importa as funções de cada script
-      import { fetchEventos } from "../scripts/fetch/fetchEventos.js";
-      import { fetchLotes } from "../scripts/fetch/fetchLotes.js";
-      import { fetchTiposIngressos } from "../scripts/fetch/fetchTiposIngressos.js";
-      import { fetchClientes } from "../scripts/fetch/fetchClientes.js";
-      import { fetchIngressos } from "../scripts/fetch/fetchIngressos.js";
+      import { renderEventos } from "../scripts/render/renderEventos.js";
+      import { renderLotes } from "../scripts/render/renderLotes.js";
+      import { renderTiposIngressos } from "../scripts/render/renderTiposIngressos.js";
+      import { renderClientes } from "../scripts/render/renderClientes.js";
+      import { renderIngressos } from "../scripts/render/renderIngressos.js";
 
       document.addEventListener("DOMContentLoaded", () => {
         const btnEventos = document.getElementById("btnEventos");
@@ -163,19 +163,19 @@
         const btnIngressos = document.getElementById("btnIngressos");
 
         if (btnEventos) {
-          btnEventos.addEventListener("click", fetchEventos);
+          btnEventos.addEventListener("click", renderEventos);
         }
         if (btnLotes) {
-          btnLotes.addEventListener("click", fetchLotes);
+          btnLotes.addEventListener("click", renderLotes);
         }
         if (btnTiposIngressos) {
-          btnTiposIngressos.addEventListener("click", fetchTiposIngressos);
+          btnTiposIngressos.addEventListener("click", renderTiposIngressos);
         }
         if (btnClientes) {
-          btnClientes.addEventListener("click", fetchClientes);
+          btnClientes.addEventListener("click", renderClientes);
         }
         if (btnIngressos) {
-          btnIngressos.addEventListener("click", fetchIngressos);
+          btnIngressos.addEventListener("click", renderIngressos);
         }
       });
     </script>

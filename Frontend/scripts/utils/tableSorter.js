@@ -13,8 +13,7 @@ export function makeSortable(tableId) {
   };
 
   headers.forEach((header, index) => {
-    console.log(header);
-    // Verifica se a coluna é ordenável (pode excluir colunas específicas como "Ações")
+    // Verifica se a coluna é ordenável
     if (header.textContent !== "Ações") {
       // Adiciona classe e estilos para indicar que é ordenável
       header.classList.add("sortable");
