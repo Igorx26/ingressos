@@ -1,5 +1,3 @@
-// fetchUsuarios.js
-
 // URL base do backend
 import { apiUrl } from "../utils/config.js";
 
